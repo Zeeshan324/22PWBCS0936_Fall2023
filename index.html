@@ -3,63 +3,423 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel to switzerland</title>
-    <link rel="stylesheet" type="css" href="style.css">
+    <title>Portofolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
 
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans,wght@1,100&display=swap" rel="stylesheet">">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>     <!--using internal css-->
+        *{
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+}
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-image: url("IMG_20230926_174320.jpg.jpg");
+
+}
+nav{
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding-top: 45px;
+padding-left: 8%;
+padding-right: 8%;
+}
+.logo{
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+span{
+    color: #f9004d; 
+}
+
+nav ul li{
+    list-style-type :none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+nav ul li a{
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+nav ul li a:hover{
+    color: #f9004d;
+    transition: .4s;
+}
+.btn{
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: .4s;
+}
+.btn:hover{
+    transform: scale(1.2);
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+h1{
+    color: white;
+    margin:20px 0px 20px;
+    font-size: 75px;
+}
+h3{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 50px; 
+}
+h4{
+    color: #fcfc;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+.newslatter form{
+    width: 380px;
+    max-width: 100%;
+    position: relative;
+}
+.newslatter form input:first-child{
+    display: inline-block;
+    width: 100%;
+    padding: 14px 130px 14px 15px;
+    border: 2px solid #f9004d;
+    outline:none ;
+    border-radius: 30px;
+}
+.newslatter form input:last-child{
+    position: absolute;
+    display: inline-block;
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: #f9004d;
+    color: white;
+    box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
+    top: 6px;
+    right: 6px;
+}
+.about{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #191919;
+}
+.about img{
+    height: auto;
+    width: 430px;
+}
+.about-text{
+    width: 550px;
+}
+.main{
+    width:1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-text h2{
+    color: white;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.about-text h5{
+color: white;
+letter-spacing: 2px;
+font-size: 22px;
+margin-bottom: 25px;
+text-transform: capitalize;
+}
+.about-text p{
+    color:#fcfc;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+button{
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border:2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition:.4s;
+}
+button:hover{
+    background-color: transparent;
+    border:2px solid #f9004d;
+    cursor: pointer;
+}
+.service{
+    background: #101010;
+    width:100%;
+    padding:100px 0px;
+}
+.title h2{
+    color:white;
+    font-size: 75px;
+    width:1130px;
+    margin: 30px auto;
+    text-align: center;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+.card{
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+   
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.card i{
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin:25px 0px;
+    color:#f9004d ;
+}
+h5{
+    color: white;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+.pra p{
+    color:#fcfc;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+.card .button{
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border:2px solid transparent;
+    font-weight: bold;
+    padding: 13px 22px;
+    border-radius: 30px;
+    transition:.4s;
+}
+.card .button:hover{
+    background-color: transparent;
+    border:2px solid #f9004d;
+    cursor: pointer;
+}
+#contact{
+    background: #191919;
+}
+#contact h2{
+    color:white;
+    font-size: 75px;
+    text-align: center;
+    padding-top: 20px;
+}
+#form{
+    max-width: 600px;
+    margin: auto;
+    padding: 40px;
+}
+label{
+    color: white;
+    display: flex block;
+    font-size: x-large;
+    padding: 2px 0px;
+}
+
+#form input{
+            width: 100%;
+            padding: 8px;
+            font-size: 16px;
+            border: 2px solid #f9004d;
+            border-radius: 30px;
+            margin-bottom: 20px;
+            background-color: white;
+}
+form textarea{
+    border: 2px solid #f9004d;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    width: 522px;
+    height: 135px;
+}
+.icon{
+ padding: 20px;
+ font-size: x-large;
+ display: flex;
+ justify-content: center;
+align-items: center;
+
+}
+.icon a{
+    color: white;
+    margin-bottom: 5px;
+    text-decoration: none;
+    padding-left: 10px;
+    transition: color 0.5s;
+}
+a:hover{
+    color: #ee1b1b;
+}
+
+#home a{
+    font-size: x-large;
+    color: #e40e0e;
+}
+    </style>
 </head>
 <body>
+<!--Home section-->
 
-    <div class="top-bar">
-        <header>
-        <nav  style=" text-align: center; background-color: #e5e5e5;font-size: 18px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
-        <a href="index.html" style="margin-right: 15px;" >Home</a>
-        <a href="stories.html" style="margin-right: 15px;">Stories</a>
-        <a href="guide.html" style="margin-right: 15px;" >Guide</a>
-        <a href="gallery.html" style="margin-right: 15px;">Photo Gallery
-        <a href="contact.html" style="margin-right: 15px;">Contact us</a>
-        </a>
+    <div class="hero">
+        <nav>
+            <h2 class="logo">Portfol<span>lio</span></h2>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-me">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+            <a href="#" class="btn">Subscribe</a>
         </nav>
-        </header>
+<section id="home">
+        <div class="content">
+            <h4>Hello, my name is</h4>
+            <h1>Zeeshan <span>Ahmed</span></h1>
+            <h3>I am a Web Developer</h3>
+            <div class="newslatter">
+                <form action="">
+                    <input type="email" name="email" id="email" placeholder="Enter Your Email">
+                    <input type="button" name="submit" value="Lets Start">
+                </form>
+            </div>
+        </div>
     </div>
-    
-
-    <div class="travel-info" style="margin-left: 20px; margin-right:20px;">
-        <h2 style="font-family: 'Times New Roman', Times, serif;" class="dream">A Dream Come True (switzerland)</h2>
-            <p>
-                In my quest to explore the mesmerizing landscapes of Switzerland, 
-                I embarked on a journey that will forever hold a special place in my heart.
-                Zeeshan Ahmad, I, ventured into this Alpine wonderland with the help of the 
-                renowned travel agency "SwissVoyages." From the moment I set foot in Zurich 
-                o my awe-inspiring adventures in the Swiss Alps and charming towns like Lucerne
-                and Interlaken, every moment was a revelation of natural beauty, cultural richness, 
-                and unforgettable memories. Join me as I recount the breathtaking landscapes, delectable
-                Swiss chocolate, and the warm hospitality that made my journey to Switzerland a dream come
-                true.
-            </p>
-        <h2 style="font-family: 'Times New Roman', Times, serif;">A Journey of Discovery (From Pakistan to Switzerland)</h2>
-        <p>
-            As Zeeshan Ahmad, I embarked on an unforgettable adventure that took me from the vibrant streets of Pakistan to the picturesque landscapes of Switzerland. My remarkable journey was expertly organized by "SwissWonders," a top-tier travel agency known for crafting dream vacations. The transition from Pakistan's bustling cities to Switzerland's serene Alpine beauty was seamless.
-
-My journey was not only about exploration but also about the deep connections I formed with people along the way. I was greeted with warm smiles and open arms as I delved into the culture and traditions of both nations. "SwissWonders" played a pivotal role in facilitating this cultural exchange, connecting me with locals and providing enriching experiences.
-
-From the bustling markets of Lahore to the pristine Swiss Alps, I encountered a world of contrasts. The rich history of Pakistan merged with the timeless charm of Swiss villages. The journey wasn't just about scenic vistas but also about understanding the stories behind them.
-
-Together with my fellow travelers, I tasted the local cuisine, explored charming towns like Lucerne and Interlaken, and marveled at the natural wonders that Switzerland had to offer. The Swiss chocolate was just as sweet as the connections I formed.
-
-"SwissWonders" made this cross-continental voyage a truly magical experience, ensuring that every detail was perfectly planned. They introduced me to both the traditional and the modern aspects of Switzerland, making me appreciate the country even more.
-
-This journey was not just about covering miles on the map; it was about bridging cultures, gaining a broader perspective, and forming lasting memories. It was about appreciating the diversity and uniqueness of both Pakistan and Switzerland and cherishing the beauty of the world. From Pakistan to Switzerland, this was truly a journey of discovery.
-
-        </p>  
-        
+</section>
+            <!--About Section-->
+<section id="about-me">
+    <section class="about">
+        <div class="main">
+    <img src="IMG_20221108_122133.jpg.jpg">
+    <div class="about-text">
+        <h2>About Me</h2>
+        <h5>Develepor <span>& Designer</span></h5>
+        <p>I am a dedicated and passionate software developer with a strong background in computer science and programming. With several years of experience in the field, I have honed my skills in various programming languages and technologies, enabling me to create efficient and user-friendly software solutions. I am enthusiastic about tackling complex problems and finding innovative solutions through coding. My goal is to contribute my expertise to meaningful projects, collaborate with diverse teams, and continuously learn and grow in the ever-evolving world of technology.</p>
+        <button type="button">Let's Talk</button>
     </div>
-    <div class="travel-images" style="margin-left: 20px;margin-right: 20px;">
-        <img src="./home-1.jpg" alt="morning" style="width: 320px; height: 320px;">
-        <img src="./home-2.jpg" alt="morning" style="width: 320px; height: 320px;">
-        <img src="./home-3.jpg" alt="morning" style="width: 320px; height: 320px;">
-        <img src="./home-4.jpg" alt="morning" style="width: 320px; height: 320px;">
-
     </div>
+    </section>
+</section>
+            <!--Services-->
+<section id="services">
+    <div class="service">
+        <div class="title">
+            <h2>Our Services</h2>
+        </div>
+
+        <div class="box">
+            <div class="card">
+                <i class="fa-solid fa-bars"></i>
+                <h5>Web Develpoment</h5>
+                <div class="pra">
+                    <p>Every website should be built with two primary goals:Firstly, it needs to wrok across all devices. Secondly, it needs to be fast as possible.</p>
+                    <p style="text-align: center;">
+                        <a class="button" href="#">Read More</a>
+                    </p>
+
+                </div>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-user"></i>
+                <h5>Web Develpoment</h5>
+                <div class="pra">
+                    <p>Every website should be built with two primary goals:Firstly, it needs to wrok across all devices. Secondly, it needs to be fast as possible.</p>
+                    <p style="text-align: center;">
+                        <a class="button" href="#">Read More</a>
+                    </p>
+                    
+                </div>
+            </div>
+            <div class="card">
+                <i class="fa-regular fa-bell"></i>
+                <h5>Web Develpoment</h5>
+                <div class="pra">
+                    <p>Every website should be built with two primary goals:Firstly, it needs to wrok across all devices. Secondly, it needs to be fast as possible.</p>
+                    <p style="text-align: center;">
+                        <a class="button" href="#">Read More</a>
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2 style="text-align: center;">Contact Us</h2>
+<div id="form">
+
+<form action="/action">
+
+<label for="name">Name:</label>
+<input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+<label for="email">Email:</label>
+<input type="text" id="email" name="email" placeholder="xyz@gmail.com" required>
+
+<label for="contact">subjec:</label>
+<input type="text" id="contact" name="contact" placeholder="xxxx-xxxxxxx" required>
+
+<label for="textarea">Your Message:</label>
+<textarea name="message" id="message" cols="30" rows="10" ></textarea>
+
+<button type="submit" id="button">Submit</button>
+
+</div>
+
+<div >
+<span class="icon">
+<a href="https://github.com">Github<i class="fa-brands fa-github fa-lg" style="color:rgb(11, 10, 10)"></i> </a>
+<a href="mailto:mn1223095@gmail.com">gmail<i class="fa-regular fa-envelope fa-lg" style="color: #d30c13;"></i></a>
+<a href="https://www.facebook.com">Facebook<i class="fa-brands fa-facebook fa-lg" style="color: #0e0ee1;"></i> </a>
+<a href="https://twitter.com/?lang=en">Twitter<i class="fa-brands fa-twitter" style="color: #3d9cd7;"></i></a>
+<a href="https://youtube.com">Youtube<i class="fa-brands fa-youtube fa-lg" style="color: #e90d0d;"></i></a>
+
+</span>
+
+</div>
+
+</form>
+</section>
 
 </body>
 </html>
